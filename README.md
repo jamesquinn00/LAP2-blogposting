@@ -1,1 +1,0 @@
-# LAP2-blogposting
