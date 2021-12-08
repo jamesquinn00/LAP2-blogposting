@@ -3,8 +3,8 @@
 ## Installation and Usage
 
 * Clone the repo.
-* To run server CD into api folder and `docker compose up`.
-* Open a new terminal, right click on the index.html file and select Open with Live Server to view the website.
+* To run server, CD into api folder and `docker compose up`.
+* Right click on the index.html file and select 'Open with Live Server' to view the website.
 
 
 ## Technologies
@@ -12,14 +12,15 @@
 * HTML/CSS
 * JavaScript
 * Node 
+* Docker
 
 
 ## Process
-* Intitially started out on the client side with then worked our way into the server side.
-* Started with a basic css styling and html template.
-* Then worked on the seed file for sql commands.
+* Intitially started out on the client side then worked our way into the server side.
+* Started with a basic CSS styling and html template.
+* Then worked on the seed file for SQL commands.
 * GET/POST requests
-* Added functionality and styling on the client side.
+* Added functionality and improved styling on the client side.
 
 
 ## Wins & Challenges
@@ -31,5 +32,5 @@
 
 ### Challenges
 * No URL for new post
-* No date implemented. 
+* No date implemented (for blog posts). 
 
