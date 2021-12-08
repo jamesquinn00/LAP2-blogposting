@@ -19,10 +19,11 @@ async function getAllPosts(){
             for(let i in data.blogs[x]){
                 let blog = data.blogs[x]
                 let newLi = document.createElement("li")
+                if(i!="id"){
                 newLi.textContent = blog[i]
                 newUl.appendChild(newLi)
                 blogContainer.appendChild(newUl)
-                }
+                }}
 
             newUl.addEventListener("click", (e)=>{
                 getBlog(data.blogs[x].id)})
@@ -69,10 +70,11 @@ async function getBlog(id) {
         console.log(data)
         for(let i in data){
             let newLi = document.createElement("li")
+            if(i!="id"){
             newLi.textContent = data[i]
             newUl.appendChild(newLi)
             singleBlog.appendChild(newUl)
-        }
+        }}
         let link = document.createElement("a")
         link.href = "index.html"
         link.textContent="Go Back"
