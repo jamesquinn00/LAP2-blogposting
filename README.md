@@ -1,0 +1,35 @@
+# LAP2-blogposting
+
+## Installation and Usage
+
+* Clone the repo.
+* To run server CD into api folder and `docker compose up`.
+* Open a new terminal, right click on the index.html file and select Open with Live Server to view the website.
+
+
+## Technologies
+
+* HTML/CSS
+* JavaScript
+* Node 
+
+
+## Process
+* Intitially started out on the client side with then worked our way into the server side.
+* Started with a basic css styling and html template.
+* Then worked on the seed file for sql commands.
+* GET/POST requests
+* Added functionality and styling on the client side.
+
+
+## Wins & Challenges
+### Wins
+* All requirements in the brief were met.
+* The app has a browser client allowing users to write a post with a title, a pseudonym and a body.
+* The user should be able to access their post using that show path even after a server restart
+
+
+### Challenges
+* No URL for new post
+* No date implemented. 
+
