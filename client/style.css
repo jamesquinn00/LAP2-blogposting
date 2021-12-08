@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic&display=swap');
 
 body{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 
 h1{
@@ -22,15 +22,34 @@ h1{
 }
 
 input, textarea{
-    margin-bottom:5px;
-    width: 250px
+    margin-bottom:8px;
+    width: 250px;
+    border: none;
+    font-family: 'Lora', sans-serif;
+    font-size: larger;
 }
 
-#delete{
-    text-align: center;
-    margin-top: 10px;
+button{
+    margin-top: 5px;
+    border-radius: 15px;
+    font-family: 'Lora', sans-serif;
 }
 
-p{
-    line-height: 160%;
+li{
+    list-style: none;
+}
+
+li:first-child{
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+li:last-child{
+    color: grey;
+}
+
+
+a{
+    text-decoration: none;
 }
