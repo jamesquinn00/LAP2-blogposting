@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const Blog = require('../models/Blog')
-
-// Routre for retrieving all actor entries
 router.get('/', async(req,res)=>{
     try{
         const blogs = await Blog.all
@@ -14,7 +12,7 @@ router.get('/', async(req,res)=>{
     }
 })
 
-// Routre for finding by ID
+// Router for finding by ID
 router.get('/:id', async (req, res) => {
     try {
         const blog = await Blog.findById(parseInt(req.params.id))
@@ -24,7 +22,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-// Routre for creating actor entry
+// Router for creating blog entry
 router.post('/', async (req, res) => {
     try {
         const blog = await Blog.create(req.body.title, req.body.content, req.body.name)
