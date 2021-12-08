@@ -1,0 +1,7 @@
+-- INSERT INTO actors (name, age, gender)
+-- VALUES  ('Brad Pitt', 57, 'male'),
+--         ('Meryl Streep', 72, 'female'),
+--         ('George Clooney', 60, 'male'),
+--         ('Florence Pugh', 25, 'female'),
+--         ('Stanley Tucci', 61, 'male'),
+--         ('Saoirse Ronan', 27, 'female');

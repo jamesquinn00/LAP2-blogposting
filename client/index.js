@@ -1,37 +1,35 @@
-// getAllBtn = document.querySelector("#getAll")
 submitForm = document.querySelector("#submit")
-// deleteForm = document.querySelector("#delete")
+blogContainer = document.querySelector("#blog-container")
 
 document.addEventListener("DOMContentLoaded", getAllPosts)
 
 submitForm.addEventListener("submit", (e)=>{
-    addActor(e)
-})
-
-deleteForm.addEventListener("submit", (e)=>{
-    deleteActor(e)
+    addPost(e)
 })
 
 async function getAllPosts(){
     try{
         let data = await fetch('http://localhost:3000/posts')
         data = await data.json()
-        console.log(data)
-        const newUl = document.createElement("ul");
-        // document.querySelector("#deleteId").setAttribute("max",data.actors.length)
-        for(const x in data.posts){
-            console.log(data.posts[x].name)
-            const newLi = document.createElement("li");
-            newLi.textContent = data.posts[x].id + ": " + data.posts[x].title + ", " + data.posts[x].content + " " + data.posts[x].name;
-            newUl.appendChild(newLi);
-            document.querySelector("p").appendChild(newUl)
-    }
+        for(let x in data.blogs){
+            console.log(data.blogs[x])
+            let newUl = document.createElement("ul")
+            for(let i in data.blogs[x]){
+                let blog = data.blogs[x]
+                let newLi = document.createElement("li")
+                newLi.textContent = blog[i]
+                newUl.appendChild(newLi)
+                blogContainer.appendChild(newUl)
+            }
+        }
+        
     }catch(err){
         console.log(err)
     }
 };
 
 async function addPost(e){
+    e.preventDefault()
     const postData = {
         title: e.target.title.value,
         content: e.target.content.value,
@@ -49,12 +47,3 @@ async function addPost(e){
         .then(() => e.target.reset())
         .catch(console.warn)
 };
-
-function deletePost(e){
-    let id = e.target.id.value
-    const options = { 
-        method: 'DELETE',
-    };
-    fetch(`http://localhost:3000/posts/${id}`, options)
-        .catch(console.warn)
-}
