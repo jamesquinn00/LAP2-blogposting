@@ -3,7 +3,7 @@
 ## Installation and Usage
 
 * Clone the repo.
-* To run server, CD into api folder and `docker compose up`.
+* To run server, cd into api folder and `docker compose up`.
 * Right click on the index.html file and select 'Open with Live Server' to view the website.
 
 
