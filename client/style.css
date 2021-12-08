@@ -4,7 +4,8 @@ body{
     font-family: 'Lora', sans-serif;
 }
 
-h1{
+a>h1{
+    color:black !important;
     text-align: center;
 }
 
@@ -35,6 +36,9 @@ button{
     font-family: 'Lora', sans-serif;
 }
 
+ul:hover{
+    cursor: pointer;
+}
 li{
     list-style: none;
 }
@@ -48,7 +52,6 @@ li:first-child{
 li:last-child{
     color: grey;
 }
-
 
 a{
     text-decoration: none;
